@@ -1,0 +1,393 @@
+html,
+body {
+    background-color: rgb(76, 75, 75) !important;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 200px;
+    height: 40px;
+    padding-right: 15px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+#nav {
+    display: flex;
+    /* Ativa o Flexbox no nav */
+    gap: 20 px;
+    /* Espaçamento entre os elementos */
+    justify-content: space-between;
+    align-items: center;
+    /* Alinha os itens verticalmente */
+    width: 100%;
+}
+
+#nav .button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    /* Alinha os itens à direita */
+    gap: 5px;
+    /* Adiciona um espaçamento entre os botões */
+}
+
+#form {
+    display: flex;
+    align-items: center;
+}
+
+.search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.search-wrapper input[type="text"] {
+    width: 300px;
+    height: 45px;
+    padding: 10px 10px 10px 40px;
+    /* Espaço à esquerda para o ícone */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    color:  #423f3f solid;
+}
+
+.search-wrapper i {
+    position: absolute;
+    left: 10px;
+    /* Alinha a lupa à direita do campo */
+    font-size: 14px;
+    color:  #423f3f solid;
+    pointer-events: none;
+    /* Evita que o ícone seja clicável */
+}
+
+#header {
+    display: flex;
+    /* Ativa o Flexbox */
+    box-sizing: border-box;
+    height: 80px;
+    padding: 10px 20px;
+    /* Adiciona espaço interno */
+    align-items: center;
+    /* Alinha verticalmente */
+    justify-content: space-between;
+    /* Cria espaço entre os elementos */
+    background: rgb(53, 51, 51);
+    box-shadow: 3px 3px 6px #b1b1b1;
+}
+
+#logo img {
+    width: 60px;
+    height: 60px;
+    margin-right: 2rem;
+}
+
+#carouselExampleInterval {
+    width: 100vw;
+    /* Garante que o carousel ocupe 100% da largura da viewport */
+    height: auto;
+    display: flex;
+    position: relative;
+
+}
+
+/* Ajuste geral do carousel */
+.carousel-inner img {
+    object-fit: cover;
+    height: 350px;
+    /* Ajuste para a altura desejada */
+    border-radius: 0;
+    /* Remove qualquer arredondamento das imagens */
+}
+
+
+.row {
+    display: flex;
+    /* Adiciona Flexbox à linha */
+    align-items: stretch;
+    /* Faz as colunas esticarem para a mesma altura */
+}
+
+h2,
+h3 {
+    color: rgb(250, 248, 248); /* Cor verde escura para os títulos */
+    font-weight: bold; /* Peso mais grosso */
+    font-family: 'Barlow', sans-serif;
+    margin-top: 0;
+}
+
+h1 {
+    font-weight: normal;
+    color: rgb(250, 248, 248);
+}
+
+p {
+    line-height: 1.6;
+    color: rgba(250, 248, 248, 0.595);
+    max-width: 600px;
+    font-size: 18px;
+}
+
+.container {
+    padding: 2rem 0;
+}
+
+#text-decoration-none {
+    text-decoration: none;
+}
+
+button[type="button"] {
+    background-color: rgba(246, 109, 18, 0.956);
+    color: rgb(235, 227, 227);
+    font-size: 16px;
+    margin-top: 2px;
+    width: 120px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+button[type="button"]:hover {
+    background-color: rgba(246, 109, 18, 0.725);
+}
+
+button[type="button-carousel"] {
+    margin-top: 2px;
+    width: 120px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button[type="button-cadastar"] {
+    background-color: rgb(53, 51, 51);
+    /* Define a cor de fundo do botão como azul */
+    color: white;
+    /* Texto branco */
+    padding: 10px;
+    /* Adiciona espaçamento interno ao botão */
+    border: none;
+    /* Sem borda */
+    border-radius: 8px;
+    /* Define cantos arredondados no botão */
+    cursor: pointer;
+    /* Altera o cursor para uma mão ao passar sobre o botão */
+    font-size: 16px;
+    /* Define o tamanho da fonte do botão */
+    margin-top: 2px;
+    /* Adiciona espaço acima do botão */
+    width: 120px;
+    /* Define a largura do botão */
+}
+
+button[type="button-cadastrar"]:hover {
+    background-color: rgba(255, 255, 255, 0.099);
+}
+
+button[type="button-entrar"] {
+    background-color: rgb(53, 51, 51);
+    /* Define a cor de fundo do botão como azul */
+    color: white;
+    /* Texto branco */
+    padding: 10px;
+    /* Adiciona espaçamento interno ao botão */
+    border: none;
+    /* Sem borda */
+    border-radius: 8px;
+    /* Define cantos arredondados no botão */
+    cursor: pointer;
+    /* Altera o cursor para uma mão ao passar sobre o botão */
+    font-size: 16px;
+    /* Define o tamanho da fonte do botão */
+    margin-top: 2px;
+    /* Adiciona espaço acima do botão */
+    width: 120px;
+    /* Define a largura do botão */
+}
+
+button[type="button-entrar"]:hover {
+    background-color: rgba(255, 255, 255, 0.099);
+}
+
+button[type="submit-entrar"] {
+    background-color: rgb(4, 27, 71);
+    /* Define a cor de fundo do botão como azul */
+    color: white;
+    /* Texto branco */
+    padding: 10px;
+    /* Adiciona espaçamento interno ao botão */
+    border: none;
+    /* Sem borda */
+    border-radius: 8px;
+    /* Define cantos arredondados no botão */
+    cursor: pointer;
+    /* Altera o cursor para uma mão ao passar sobre o botão */
+    font-size: 16px;
+    /* Define o tamanho da fonte do botão */
+    margin-top: 2px;
+    /* Adiciona espaço acima do botão */
+    width: 120px;
+    /* Define a largura do botão */
+}
+
+button[type="submit-entrar"]:hover {
+    background-color: rgba(4, 27, 71, 0.782);
+}
+
+button[type="submit"] {
+    border-radius: 8px;
+    margin-top: 1rem;
+    /* Espaçamento superior de 1 rem para o botão */
+    transition: background-color 0.3s;
+    /* Anima a transição de cor de fundo com duração de 0,3 segundos */
+    background-color:  rgba(246, 109, 18, 0.956);
+    /* Define uma cor verde escura como fundo do botão */
+    border: none;
+    /* Remove a borda do botão */
+    margin-top: 0;
+    /* Remove o espaçamento superior */
+    margin-left: 5%;
+    /* Adiciona espaçamento à esquerda de 5% */
+    padding: 0.5rem 1.5rem;
+    /* Define um preenchimento interno de 0,5 rem em cima/baixo e 1,5 rem nas laterais */
+}
+
+button[type="submit"]:hover {
+    background-color: rgba(246, 109, 18, 0.773);
+    /* Altera a cor do botão ao passar o mouse */
+}
+
+button[type="submit-saibaMais"] {
+    border-radius: 8px;
+    margin-top: 1rem;
+    /* Espaçamento superior de 1 rem para o botão */
+    transition: background-color 0.3s;
+    /* Anima a transição de cor de fundo com duração de 0,3 segundos */
+    background-color: rgba(246, 109, 18, 0.956);
+    /* Define uma cor verde escura como fundo do botão */
+    border: none;
+    /* Remove a borda do botão */
+    margin-top: 0;
+    /* Remove o espaçamento superior */
+    margin-left: 30%;
+    /* Adiciona espaçamento à esquerda de 5% */
+    padding: 0.5rem 1.5rem;
+    /* Define um preenchimento interno de 0,5 rem em cima/baixo e 1,5 rem nas laterais */
+}
+
+button[type="submit-saibaMais"]:hover {
+    background-color: rgba(246, 109, 18, 0.773);
+    /* Altera a cor do botão ao passar o mouse */
+}
+
+input[type="submit"] {
+    background-color: rgba(53, 51, 51, 0.464);
+    /* Define a cor de fundo do botão como azul */
+    color: white;
+    /* Texto branco */
+    padding: 10px;
+    /* Adiciona espaçamento interno ao botão */
+    border: none;
+    /* Sem borda */
+    border-radius: 8px;
+    /* Define cantos arredondados no botão */
+    cursor: pointer;
+    /* Altera o cursor para uma mão ao passar sobre o botão */
+    font-size: 16px;
+    /* Define o tamanho da fonte do botão */
+    margin-top: 2px;
+    /* Adiciona espaço acima do botão */
+    width: 120px;
+    /* Define a largura do botão */
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(255, 255, 255, 0.099);
+    /* Define a cor de fundo do botão */
+}
+
+.card-body {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card {
+    display: flex; /* Faz com que todos os cards tenham a mesma altura */
+    flex-direction: column;
+    /* Garante que os elementos dentro dos cards sejam organizados em coluna */
+    justify-content: space-between;
+    /* Distribui o espaço uniformemente entre os elementos */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    color: rgb(246, 109, 18);
+    /* Define a cor verde escura para o título do card */
+    font-size: 1.2rem;
+    /* Define o tamanho da fonte para o título */
+    font-weight: bold;
+    /* Define o peso da fonte como negrito */
+    margin-bottom: 0.8rem;
+}
+
+.card-text {
+    line-height: 1.5;
+    color: black;
+    /* Define a cor verde escura para o texto do card */
+    font-size: 15px;
+    /* Define o tamanho da fonte do texto */
+    margin: 0.5rem 0;
+    /* Define um espaço vertical de 0,5 rem acima e abaixo do texto */
+}
+
+
+.card-img-top {
+    height: 190px;
+    object-fit: cover;
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+.container {
+    max-width: 1500px;
+    /* Limita a largura da área do container a 1200px */
+}
+
+.text-center {
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+.footer {
+    background-color: #5c5b5b;
+    color: #f1f1f1;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
