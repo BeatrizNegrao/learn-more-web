@@ -3,7 +3,7 @@ body {
     background-color: rgb(76, 75, 75) !important;
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     color: #333;
 }
@@ -86,7 +86,8 @@ input[type="text"] {
 #logo img {
     width: 60px;
     height: 60px;
-    margin-right: 2rem;
+    margin-left: 80px;
+    margin-right:3rem;
 }
 
 #carouselExampleInterval {
@@ -118,17 +119,18 @@ input[type="text"] {
 h2,
 h3 {
     color: rgb(250, 248, 248); /* Cor verde escura para os títulos */
-    font-weight: bold; /* Peso mais grosso */
-    font-family: 'Barlow', sans-serif;
+    font-weight: 700; /* Peso mais grosso */
+    font-size: 24px;
     margin-top: 0;
 }
 
 h1 {
-    font-weight: normal;
+    font-weight: 700;
     color: rgb(250, 248, 248);
 }
 
 p {
+    margin-top: 10px;
     line-height: 1.6;
     color: rgba(250, 248, 248, 0.595);
     max-width: 600px;
@@ -196,20 +198,13 @@ button[type="button-entrar"] {
     /* Define a cor de fundo do botão como azul */
     color: white;
     /* Texto branco */
-    padding: 10px;
-    /* Adiciona espaçamento interno ao botão */
+    padding: 10px; /* Adiciona espaçamento interno ao botão */
     border: none;
-    /* Sem borda */
-    border-radius: 8px;
-    /* Define cantos arredondados no botão */
-    cursor: pointer;
-    /* Altera o cursor para uma mão ao passar sobre o botão */
-    font-size: 16px;
-    /* Define o tamanho da fonte do botão */
-    margin-top: 2px;
-    /* Adiciona espaço acima do botão */
-    width: 120px;
-    /* Define a largura do botão */
+    border-radius: 8px; /* Define cantos arredondados no botão */
+    cursor: pointer; /* Altera o cursor para uma mão ao passar sobre o botão */
+    font-size: 16px; /* Define o tamanho da fonte do botão */
+    margin-top: 2px; /* Adiciona espaço acima do botão */
+    width: 120px; /* Define a largura do botão */
 }
 
 button[type="button-entrar"]:hover {
@@ -218,26 +213,32 @@ button[type="button-entrar"]:hover {
 
 button[type="submit-entrar"] {
     background-color: rgb(4, 27, 71);
-    /* Define a cor de fundo do botão como azul */
     color: white;
-    /* Texto branco */
-    padding: 10px;
-    /* Adiciona espaçamento interno ao botão */
+    padding: 10px; /* Adiciona espaçamento interno ao botão */
     border: none;
-    /* Sem borda */
     border-radius: 8px;
-    /* Define cantos arredondados no botão */
-    cursor: pointer;
-    /* Altera o cursor para uma mão ao passar sobre o botão */
+    cursor: pointer; /* Altera o cursor para uma mão ao passar sobre o botão */
     font-size: 16px;
-    /* Define o tamanho da fonte do botão */
-    margin-top: 2px;
-    /* Adiciona espaço acima do botão */
+    margin-top: 2px; /* Adiciona espaço acima do botão */
     width: 120px;
-    /* Define a largura do botão */
 }
 
 button[type="submit-entrar"]:hover {
+    background-color: rgba(4, 27, 71, 0.782);
+}
+button[type="submit-cadastrar"] {
+    background-color: rgb(4, 27, 71);
+    color: white;
+    padding: 10px; /* Adiciona espaçamento interno ao botão */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 2px; /* Adiciona espaço acima do botão */
+    width: 120px;
+}
+
+button[type="submit-cadastrar"]:hover {
     background-color: rgba(4, 27, 71, 0.782);
 }
 
@@ -313,6 +314,24 @@ input[type="submit"]:hover {
     /* Define a cor de fundo do botão */
 }
 
+/* Títulos dos modais */
+.modal-title {
+    font-size: 24px;
+}
+
+/* Textos em cima dos inputs dos modais */
+input[type="name"] {
+    font-size: 16px;
+}
+input[type="email"] {
+    font-size: 16px;
+}
+input[type="password"] {
+    font-size: 16px;
+}
+
+
+
 .card-body {
     padding: 1.5rem;
     text-align: center;
@@ -320,10 +339,9 @@ input[type="submit"]:hover {
 
 .card {
     display: flex; /* Faz com que todos os cards tenham a mesma altura */
-    flex-direction: column;
-    /* Garante que os elementos dentro dos cards sejam organizados em coluna */
-    justify-content: space-between;
-    /* Distribui o espaço uniformemente entre os elementos */
+    flex-direction: column; /* Garante que os elementos dentro dos cards sejam organizados em coluna */
+    justify-content: space-between; /* Distribui o espaço uniformemente entre os elementos */
+    overflow: hidden;
 }
 
 .card:hover {
@@ -332,30 +350,23 @@ input[type="submit"]:hover {
 }
 
 .card-title {
-    color: rgb(246, 109, 18);
-    /* Define a cor verde escura para o título do card */
+    color: rgb(246, 109, 18); 
     font-size: 1.2rem;
-    /* Define o tamanho da fonte para o título */
     font-weight: bold;
-    /* Define o peso da fonte como negrito */
     margin-bottom: 0.8rem;
 }
 
 .card-text {
     line-height: 1.5;
     color: black;
-    /* Define a cor verde escura para o texto do card */
     font-size: 15px;
-    /* Define o tamanho da fonte do texto */
-    margin: 0.5rem 0;
-    /* Define um espaço vertical de 0,5 rem acima e abaixo do texto */
+    margin: 0.5rem 0; /* Define um espaço vertical de 0,5 rem acima e abaixo do texto */
 }
 
-
 .card-img-top {
-    height: 190px;
+    height: 180px;
+    width: 100%;
     object-fit: cover;
-    margin: 0 auto; /* Centraliza a imagem */
 }
 
 .container {
@@ -368,26 +379,21 @@ input[type="submit"]:hover {
     /* Centraliza o texto */
 }
 
-.footer {
-    background-color: #5c5b5b;
-    color: #f1f1f1;
-    padding: 40px 20px;
-    font-family: Arial, sans-serif;
+/* Rodapé */
+.bg-primary-dark {
+    background-color: rgb(53, 51, 51);
 }
 
-.footer-section ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/* Links do rodapé */
+.text-primary-light {
     font-size: 14px;
+    color: white;
 }
 
-.footer-section ul li {
-    margin: 5px 0;
-}
-
-.footer-section ul li a {
-    color: #f1f1f1;
-    text-decoration: none;
-    transition: color 0.3s;
+/* Título do rodapé */
+.text-white {
+    font-size: 16px;
+    margin-top: 5px;
+    color: white;
+    font-weight: bold;
 }

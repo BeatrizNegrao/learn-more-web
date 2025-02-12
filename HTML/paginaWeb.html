@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../CSS/style_paginaWeb.css">
     <link rel="stylesheet" href="../BOOTSTRAP/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <title>Página de cursos</title>
+    <title>ArteSushi</title>
 </head>
 
 <body>
@@ -44,15 +44,15 @@
                     <form action="#" method="post">
                         <div class="mb-3">
                             <label for="nome" class="form-label">Nome Completo</label>
-                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
+                            <input type="name" class="form-control" id="name" name="name" placeholder="Digite seu nome completo" required>
                         </div>
                         <div class="mb-3">
                             <label for="emailCadastro" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" id="emailCadastro" name="emailCadastro" placeholder="Digite seu e-mail" required>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu melhor e-mail" required>
                         </div>
                         <div class="mb-3">
                             <label for="senhaCadastro" class="form-label">Senha</label>
-                            <input type="password" class="form-control" id="senhaCadastro" name="senhaCadastro" placeholder="Crie uma senha" required>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Crie uma senha" required>
                         </div>
                         <button type="submit-cadastrar" class="btn btn-primary w-100">Crie uma conta</button>
                     </form>
@@ -143,7 +143,7 @@
     </section>
 
     <div class="container mt-5">
-        <h2 class="text-center mb-4">Conheça nossos cursos em destaque</h2>
+        <h2 class="text-center mb-4">Conheça nossos cursos</h2>
         <div class="row text-center">
             <!-- Curso 1 -->
             <div class="col-md-3 mb-4">
@@ -201,31 +201,45 @@
             </div>
         </div>
     </div>
-    <!-- Início footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section links">
-                <h5>Sobre nós</h5>
-                <ul>
-                    <li><a href="#">Termo de adesão</a></li>
-                    <li><a href="#">Política de privacidade</a></li>
-                    <li><a href="#">ArteSushi Academy</a></li>
-                </ul>
-                <h5>Para você</h5>
-                <ul>
-                    <li><a href="#">Meus cursos</a></li>
-                </ul>
-                <h5>Ajuda</h5>
-                <ul>
-                    <li><a href="#">Central de atendimento</a></li>
-                    <li><a href="#">Perguntas frequentes</a></li>
-                </ul>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <section id="section" class="bg-primary-dark">
+            <div class="container px-4 px-lg-0">
+                <div class="row gap-6 gap-lg-0">
+                    <div class="col-lg-3 d-flex flex-column gap-2">
+                        <p class="text-white fw-bold text-x-small mb-0 mb-1">GERAL</p>
+                        <a class="text-primary-light" href="./index.html" target="_self">Termo de adesão</a>
+                        <a class="text-primary-light" href="./index.html" target="_self">Política de privacidade</a>
+                        <a class="text-primary-light" href="./index.html" target="_self">ArteSushi Academy</a>
+                    </div>
+                    <div class="col-lg-3 d-flex flex-column gap-2">
+                        <p class="text-white fw-bold text-x-small mb-0 mb-1">PARA VOCÊ</p>
+                        <a class="text-primary-light" href="./index.html" target="_self">Meus cursos</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row row-cols-3 d-none d-lg-flex">
+                            <div class="d-flex flex-column gap-2">
+                                <p class="text-white fw-bold text-x-small mb-0 mb-1">AJUDA</p>
+                                <a class="text-primary-light" href="./index.html"
+                                    target="_self">Central de atendimento</a>
+                                <a class="text-primary-light" href="./index.html"
+                                    target="_self">Perguntas frequêntes</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     </footer>
     <!-- Fim footer -->
+
 </body>
 <script type="text/javascript" src="../JAVASCRIPT/cadastro.js"></script>
 <script type="text/javascript" src="../JAVASCRIPT/login.js"></script>
 <script type="text/javascript" src="../BOOTSTRAP/js/bootstrap.min.js"></script>
 </html>
+
+
+
